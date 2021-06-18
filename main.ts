@@ -51,12 +51,16 @@ radio.onReceivedStringDeprecated(function (receivedString) {
         Tinybit.CarCtrl(Tinybit.CarState.Car_Stop)
     } else if (item.compare("button_red") == 0) {
         Tinybit.RGB_Car_Big(Tinybit.enColor.Red)
+        spin_left()
     } else if (item.compare("button_green") == 0) {
         Tinybit.RGB_Car_Big(Tinybit.enColor.Green)
     } else if (item.compare("button_blue") == 0) {
         Tinybit.RGB_Car_Big(Tinybit.enColor.Blue)
     } else if (item.compare("button_yellow") == 0) {
         Tinybit.RGB_Car_Big(Tinybit.enColor.Yellow)
+        spin_right()
+    } else if (item.compare("stick_middle") == 0) {
+        Tinybit.CarCtrl(Tinybit.CarState.Car_Stop)
     } else {
     	
     }
